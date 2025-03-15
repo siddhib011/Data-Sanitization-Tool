@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Data Sanitization Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Header -->
+    <header>
+      <h1>Dashboard</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sanitize Data</a></li>
+          <li><a href="#">View Logs</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Quick Actions -->
+      <section class="quick-actions">
+        <div class="card">
+          <h3>Sanitize Data</h3>
+          <p>Securely wipe all data from the device.</p>
+          <button id="sanitizeButton">Start Sanitization</button>
+        </div>
+        <div class="card">
+          <h3>View Logs</h3>
+          <p>Check the history of sanitization activities.</p>
+          <button>View Logs</button>
+        </div>
+        <div class="card">
+          <h3>Settings</h3>
+          <p>Configure tool settings and preferences.</p>
+          <button>Open Settings</button>
+        </div>
+      </section>
+
+      <!-- Progress Bar -->
+      <section class="progress-section">
+        <h2>Sanitization Progress</h2>
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+        <p id="progress-text">0% Complete</p>
+      </section>
+
+      <!-- Notifications -->
+      <section class="notifications">
+        <h2>Recent Notifications</h2>
+        <ul>
+          <li>Data sanitization started at 10:00 AM.</li>
+          <li>Settings updated successfully.</li>
+          <li>New login detected from IP: 192.168.1.1.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Data Sanitization Tool. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
